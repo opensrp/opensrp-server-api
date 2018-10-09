@@ -3,8 +3,7 @@
 
 EC (Event Client) Data model domain objects, Utility functions for location, google gson, tree and treenode, Contracts (interfaces) for security, location and authorization
 
-Relevant Wiki Pages
-
+#### Relevant Wiki Pages ####
 * OpenSRP Server Refactor and Cleanup
   * [Refactor and Cleanup](https://smartregister.atlassian.net/wiki/spaces/Documentation/pages/562659330/OpenSRP+Server+Refactor+and+Clean+up)
   * [How to upload and use maven jar artifacts](https://smartregister.atlassian.net/wiki/spaces/Documentation/pages/564428801/How+to+upload+and+use+maven+jar+artifacts)
@@ -17,4 +16,3 @@ Relevant Wiki Pages
   * [Ansible Playbooks](https://smartregister.atlassian.net/wiki/spaces/Documentation/pages/540901377/Ansible+Playbooks)
 * [Postgres Database Support](https://smartregister.atlassian.net/wiki/spaces/Documentation/pages/251068417/Postgres+Database+Support+as+Main+Datastore)
 * [OpenSRP Load Testing](https://smartregister.atlassian.net/wiki/spaces/Documentation/pages/268075009/OpenSRP+Load+Testing)
-
