@@ -15,7 +15,7 @@ import org.joda.time.DateTime;
  * system is that the data of {@link Event} is meaningful for business clients of system and also
  * the data links back with international standard dictionaries. An {@link Event} in system is
  * recorded via a form filled by data {@link Provider}. The form data is represented by
- * {@link FormSubmission}
+ * {@link String}
  */
 public class Event extends BaseDataObject {
 	
@@ -83,7 +83,6 @@ public class Event extends BaseDataObject {
 	 * WARNING: Overrides all existing obs
 	 * 
 	 * @param obs
-	 * @return
 	 */
 	public void setObs(List<Obs> obs) {
 		this.obs = obs;

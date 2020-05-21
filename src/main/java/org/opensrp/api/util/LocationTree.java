@@ -2,6 +2,7 @@ package org.opensrp.api.util;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.opensrp.api.domain.Location;
 
@@ -56,5 +57,9 @@ public class LocationTree {
 	
 	public Map<String, TreeNode<String, Location>> getLocationsHierarchy() {
 		return locationsHierarchy.getTree();
+	}
+	
+	public Map<String, Set<String>> getChildParent(){
+		return  locationsHierarchy.getChildParent();
 	}
 }

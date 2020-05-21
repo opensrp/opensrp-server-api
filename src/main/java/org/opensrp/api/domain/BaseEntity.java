@@ -69,7 +69,6 @@ public class BaseEntity extends BaseDataObject {
 	 * WARNING: Overrides all existing addresses
 	 * 
 	 * @param addresses
-	 * @return
 	 */
 	public void setAddresses(List<Address> addresses) {
 		this.addresses = addresses;
@@ -102,7 +101,6 @@ public class BaseEntity extends BaseDataObject {
 	 * WARNING: Overrides all existing attributes
 	 * 
 	 * @param attributes
-	 * @return
 	 */
 	public void setAttributes(Map<String, Object> attributes) {
 		this.attributes = attributes;

@@ -104,7 +104,6 @@ public class User extends BaseEntity {
 	 * WARNING: Overrides all existing roles
 	 * 
 	 * @param roles
-	 * @return
 	 */
 	public void setRoles(List<String> roles) {
 		this.roles = roles;
@@ -154,7 +153,6 @@ public class User extends BaseEntity {
 	 * WARNING: Overrides all existing permissions
 	 * 
 	 * @param permissions
-	 * @return
 	 */
 	public void setPermissions(List<String> permissions) {
 		this.permissions = permissions;
@@ -206,7 +204,6 @@ public class User extends BaseEntity {
 	 * 
 	 * @param roles
 	 * @return
-	 * @return
 	 */
 	public User withRoles(List<String> roles) {
 		this.roles = roles;
@@ -225,7 +222,6 @@ public class User extends BaseEntity {
 	 * WARNING: Overrides all existing permissions
 	 * 
 	 * @param permissions
-	 * @return
 	 * @return
 	 */
 	public User withPermissions(List<String> permissions) {

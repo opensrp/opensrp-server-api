@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * The observations applicable or noted for any {@link Event} by data entry person. Each obs links
- * back to variable in {@link FormSubmission} represent by name in {@link FormField}. Each
+ * back to variable in {@link String} represent by name in {@link String}. Each
  * {@link Obs} instead of recording value with the text of label of question, maps each question
  * with a code that links with a standard international dictionary. This helps in getting
  * standardized reports and integration with different systems

@@ -83,7 +83,6 @@ public class Location extends BaseDataObject {
 	 * WARNING: Overrides all existing identifiers
 	 * 
 	 * @param identifiers
-	 * @return
 	 */
 	public void setIdentifiers(Map<String, String> identifiers) {
 		this.identifiers = identifiers;
@@ -121,7 +120,6 @@ public class Location extends BaseDataObject {
 	 * WARNING: Overrides all existing tags
 	 * 
 	 * @param tags
-	 * @return
 	 */
 	public void setTags(Set<String> tags) {
 		this.tags = tags;
@@ -151,7 +149,6 @@ public class Location extends BaseDataObject {
 	 * WARNING: Overrides all existing attributes
 	 * 
 	 * @param attributes
-	 * @return
 	 */
 	public void setAttributes(Map<String, Object> attributes) {
 		this.attributes = attributes;
@@ -189,7 +186,6 @@ public class Location extends BaseDataObject {
 	 * 
 	 * @param identifiers
 	 * @return
-	 * @return
 	 */
 	public Location withIdentifiers(Map<String, String> identifiers) {
 		this.identifiers = identifiers;
@@ -215,7 +211,6 @@ public class Location extends BaseDataObject {
 	 * 
 	 * @param tags
 	 * @return
-	 * @return
 	 */
 	public Location withTags(Set<String> tags) {
 		this.tags = tags;
@@ -235,7 +230,6 @@ public class Location extends BaseDataObject {
 	 * WARNING: Overrides all existing attributes
 	 * 
 	 * @param attributes
-	 * @return
 	 * @return
 	 */
 	public Location withAttributes(Map<String, Object> attributes) {

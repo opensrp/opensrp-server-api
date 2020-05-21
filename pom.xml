@@ -6,7 +6,7 @@
 	<artifactId>opensrp-server-api</artifactId>
 	<packaging>jar</packaging>
 
-	<version>1.0.1</version>
+	<version>1.0.1-ANC-ALPHA-SNAPSHOT</version>
 
 	<name>opensrp-server-api</name>
 	<description>OpenSRP Server Api module</description>

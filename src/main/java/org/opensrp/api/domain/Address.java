@@ -110,7 +110,6 @@ public class Address {
 	 * WARNING: Overrides all existing fields
 	 * 
 	 * @param addressFields
-	 * @return
 	 */
 	public void setAddressFields(Map<String, String> addressFields) {
 		this.addressFields = addressFields;
@@ -127,7 +126,6 @@ public class Address {
 	 * Add field name from a list of predefined options from enum {@link AddressField}
 	 * 
 	 * @param field
-	 * @param value
 	 */
 	public void addAddressField(AddressField field, String value) {
 		if (addressFields == null) {
@@ -272,7 +270,7 @@ public class Address {
 	/**
 	 * The date when address was started or owned
 	 * 
-	 * @param endDate
+	 * @param startDate
 	 * @return
 	 */
 	public Address withStartDate(Date startDate) {
