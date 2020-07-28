@@ -1,5 +1,6 @@
 package org.opensrp.api.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -7,8 +8,10 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 /**
  * The Base Object for keeping audit data for any business entity.
  */
-public abstract class BaseDataObject {
+public abstract class BaseDataObject implements Serializable{
 	
+	private static final long serialVersionUID = 5898018240460605136L;
+
 	private User creator;
 	
 	private Date dateCreated;
