@@ -1,9 +1,10 @@
 package org.opensrp.api.util;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TreeNode<K, T> {
+public class TreeNode<K, T> implements Serializable {
 	
 	private K id;
 	
