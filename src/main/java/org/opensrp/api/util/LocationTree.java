@@ -1,5 +1,6 @@
 package org.opensrp.api.util;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import org.opensrp.api.domain.Location;
  * allows to create a complete tree of location starting from root nodes to the end or lowest level
  * in the form of tree. A root node is one with parent location null.
  */
-public class LocationTree {
+public class LocationTree implements Serializable {
 	
 	Tree<String, Location> locationsHierarchy;
 	
