@@ -2,6 +2,7 @@ package org.opensrp.api.util;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class TreeNode<K, T> implements Serializable {
@@ -33,7 +34,7 @@ public class TreeNode<K, T> implements Serializable {
 	
 	public void addChild(TreeNode<K, T> node) {
 		if (children == null) {
-			children = new HashMap<>();
+			children = new LinkedHashMap<>();
 		}
 		children.put(node.getId(), node);
 	}
