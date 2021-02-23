@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -22,18 +24,18 @@ public class Tree<K, T> implements Serializable {
 	}
 	
 	public Tree() {
-		map = new HashMap<K, TreeNode<K, T>>();
-		parentChildren = new HashMap<>();
+		map = new LinkedHashMap<K, TreeNode<K, T>>();
+		parentChildren = new LinkedHashMap<>();
 	}
 	
 	private void addToParentChildRelation(K parent, K id) {
 		if (parentChildren == null) {
-			parentChildren = new HashMap<>();
+			parentChildren = new LinkedHashMap<>();
 		}
 		
 		Set<K> kids = parentChildren.get(parent);
 		if (kids == null) {
-			kids = new HashSet<>();
+			kids = new LinkedHashSet<>();
 		}
 		
 		kids.add(id);
@@ -42,7 +44,7 @@ public class Tree<K, T> implements Serializable {
 	
 	public void addNode(K id, String label, T node, K parentId) {
 		if (map == null) {
-			map = new HashMap<K, TreeNode<K, T>>();
+			map = new LinkedHashMap<>();
 		}
 		
 		// if node exists we should break since user should write optimized code and also tree can not have duplicates
