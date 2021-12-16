@@ -1,6 +1,7 @@
 package tests;
 
 import config.ConfigProperties;
+import config.EnvGlobals;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
@@ -11,6 +12,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import utils.Reports;
+import utils.TestUtils;
 
 
 import javax.mail.MessagingException;
@@ -68,6 +70,8 @@ public  class RunCukesTest
             Reports.startReport();
         automationSteps = new ArrayList<String>();
         expectedResults=new ArrayList<String>();
+        EnvGlobals.accessToken = "Bearer "+TestUtils.testOAuthWithAuthorizationCode();
+        System.out.println(EnvGlobals.accessToken);
     }
 
     @AfterClass

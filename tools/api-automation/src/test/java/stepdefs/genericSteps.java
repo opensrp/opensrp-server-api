@@ -27,7 +27,7 @@ public class genericSteps {
     }
     @When("I Set request HEADER")
     public void i_Set_request_HEADER() {
-        ReusableFunctions.givenHeaders(ReusableFunctions.headers(Hooks.HEADER_AUTHORIZATION,EnvGlobals.apiToken));
+        ReusableFunctions.givenHeaders(ReusableFunctions.headers(Hooks.HEADER_AUTHORIZATION,EnvGlobals.accessToken));
     }
     @When("Send a GET HTTP request")
     public void send_a_GET_HTTP_request() {
