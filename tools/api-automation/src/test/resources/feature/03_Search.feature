@@ -1,8 +1,6 @@
 @test
 Feature: Search
 
-
-  @Sync
   Scenario: Get Unique Id request
     Given I am Testing Case : "115"
     Given I Set GET Unique Id request api service endpoint
@@ -10,7 +8,7 @@ Feature: Search
     And Send a GET HTTP request
     Then I receive valid Response for GET Unique Id request service
 
-  @Sync
+
   Scenario: Search Client By Path
     Given I am Testing Case : "115"
     Given I Set Search Client By Path api service endpoint
@@ -19,7 +17,7 @@ Feature: Search
     Then I receive valid Response for Search Client By Path service
 
 
-  @Sync
+
   Scenario: Search Client II
     Given I am Testing Case : "115"
     Given I Set Search Client II api service endpoint
@@ -27,3 +25,16 @@ Feature: Search
     And Send a GET HTTP request
     Then I receive valid Response for Search Client II service
 
+  Scenario: Search Client By Gender
+    Given I am Testing Case : "115"
+    Given I Set Search Client By Gender api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Client By Gender  service
+
+  Scenario: Fetch Client By Id
+    Given I am Testing Case : "115"
+    Given I Set Fetch Client By Id api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for SFetch Client By Id service

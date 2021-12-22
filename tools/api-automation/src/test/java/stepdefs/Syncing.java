@@ -43,4 +43,13 @@ public class Syncing {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
 
     }
+    @Given("I Set GET Sync View Configuration api service endpoint")
+    public void i_Set_GET_Sync_View_Configuration_api_service_endpoint() {
+        endPoint = EndpointURLs.SYNC_VIEW_CONFIGURATION;
+    }
+
+    @Then("I receive valid Response for GET Sync View Configuration service")
+    public void i_receive_valid_Response_for_GET_Sync_View_Configuration_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
 }

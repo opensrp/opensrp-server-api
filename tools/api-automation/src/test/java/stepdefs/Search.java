@@ -38,5 +38,25 @@ public class Search {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
     }
 
+    @Given("I Set Search Client By Gender api service endpoint")
+    public void i_Set_Search_Client_By_Gender_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_CLIENT_BY_GENDER;
+    }
+
+    @Then("I receive valid Response for Search Client By Gender  service")
+    public void i_receive_valid_Response_for_Search_Client_By_Gender_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Fetch Client By Id api service endpoint")
+    public void i_Set_Fetch_Client_By_Id_api_service_endpoint() {
+        endPoint = EndpointURLs.FETCH_CLIENT_BY_ID;
+    }
+
+    @Then("I receive valid Response for SFetch Client By Id service")
+    public void i_receive_valid_Response_for_SFetch_Client_By_Id_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
 }
 

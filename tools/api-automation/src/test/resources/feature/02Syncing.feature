@@ -27,3 +27,11 @@ Feature: Sync
     And Send a GET HTTP request
     Then I receive valid Response for GET Event Sync by Team service
 
+  @Sync
+  Scenario: Get Sync View Configuration
+    Given I am Testing Case : "115"
+    Given I Set GET Sync View Configuration api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for GET Sync View Configuration service
+

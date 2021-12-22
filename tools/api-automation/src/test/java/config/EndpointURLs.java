@@ -11,7 +11,9 @@ public static String SYNC_BY_TEAM ="/rest/event/sync?team=PTClinic1&serverVersio
 public static String GET_UNIQUE_ID_REQ ="/uniqueids/get?source=1&numberToGenerate=5";
 public static String SEARCH_CLIENT_BY_PATH="/rest/search/path?first_name=a&last_name=am";
 public static String SEARCH_CLIENT_II ="/rest/search/search?lastName=Bashir";
-
+public static String FETCH_CLIENT_BY_ID = "/rest/client/1000001V";
+public static String SEARCH_CLIENT_BY_GENDER = "/rest/client/search?gender=Male";
+public static String SYNC_VIEW_CONFIGURATION = "/rest/viewconfiguration/sync?serverVersion=0";
 
 
 }
