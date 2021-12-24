@@ -52,4 +52,13 @@ public class Syncing {
     public void i_receive_valid_Response_for_GET_Sync_View_Configuration_service() {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
     }
+    @Given("I Set Sync ServerSide Client api service endpoint")
+    public void i_Set_Sync_ServerSide_Client_api_service_endpoint() {
+        endPoint = EndpointURLs.SYNC_SERVERSIDE_SETTING;
+    }
+
+    @Then("I receive valid Response for Sync ServerSide Client service")
+    public void i_receive_valid_Response_for_Sync_ServerSide_Client_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
 }

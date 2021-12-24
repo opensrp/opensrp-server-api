@@ -58,5 +58,35 @@ public class Search {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
     }
 
+    @Given("I Set Search Client By Birthday api service endpoint")
+    public void i_Set_Search_Client_By_Birthday_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_CLIENT_BY_BIRTHDAY;
+    }
+
+    @Then("I receive valid Response for Search Client By Birthday  service")
+    public void i_receive_valid_Response_for_Search_Client_By_Birthday_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Search Client By Name api service endpoint")
+    public void i_Set_Search_Client_By_Name_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_CLIENT_BY_NAME;
+    }
+
+    @Then("I receive valid Response for Search Client By Name  service")
+    public void i_receive_valid_Response_for_Search_Client_By_Name_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set GET all users api service endpoint")
+    public void i_Set_GET_all_users_api_service_endpoint() {
+        endPoint = EndpointURLs.GET_ALL_USERS;
+    }
+
+    @Then("I receive valid Response for GET all users service")
+    public void i_receive_valid_Response_for_GET_all_users_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
 }
 

@@ -38,3 +38,24 @@ Feature: Search
     When I Set request HEADER
     And Send a GET HTTP request
     Then I receive valid Response for SFetch Client By Id service
+
+  Scenario: Search Client By Birthday
+    Given I am Testing Case : "115"
+    Given I Set Search Client By Birthday api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Client By Birthday  service
+
+  Scenario: Search Client By Name
+    Given I am Testing Case : "115"
+    Given I Set Search Client By Name api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Client By Name  service
+
+  Scenario: Get All users
+    Given I am Testing Case : "115"
+    Given I Set GET all users api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for GET all users service

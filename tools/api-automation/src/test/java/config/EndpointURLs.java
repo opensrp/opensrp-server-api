@@ -14,6 +14,12 @@ public static String SEARCH_CLIENT_II ="/rest/search/search?lastName=Bashir";
 public static String FETCH_CLIENT_BY_ID = "/rest/client/1000001V";
 public static String SEARCH_CLIENT_BY_GENDER = "/rest/client/search?gender=Male";
 public static String SYNC_VIEW_CONFIGURATION = "/rest/viewconfiguration/sync?serverVersion=0";
+public static String SEARCH_CLIENT_BY_BIRTHDAY ="/rest/client/search?birthdate=2017-12-16:2019-12-19";
+public static String GET_ALL_USERS= "/rest/user?page_size=10&start_index=0";
+public static String SEARCH_CLIENT_BY_NAME = "/rest/client/search?name=Adam";
+public static String SYNC_SERVERSIDE_SETTING = "/rest/settings/sync?serverVersion=0";
+
+
 
 
 }

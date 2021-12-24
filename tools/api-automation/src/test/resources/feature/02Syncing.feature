@@ -35,3 +35,11 @@ Feature: Sync
     And Send a GET HTTP request
     Then I receive valid Response for GET Sync View Configuration service
 
+
+  @Sync
+  Scenario: Sync ServerSide Client
+    Given I am Testing Case : "115"
+    Given I Set Sync ServerSide Client api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Sync ServerSide Client service
