@@ -88,5 +88,65 @@ public class Search {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
     }
 
+    @Given("I Set GET all events api service endpoint")
+    public void i_Set_GET_all_events_api_service_endpoint() {
+        endPoint = EndpointURLs.GET_ALL_EVENTS;
+    }
+
+    @Then("I receive valid Response for GET all events service")
+    public void i_receive_valid_Response_for_GET_all_events_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set GET all stocks api service endpoint")
+    public void i_Set_GET_all_stocks_api_service_endpoint() {
+        endPoint = EndpointURLs.GET_ALL_STOCK;
+    }
+
+    @Then("I receive valid Response for GET all stocks service")
+    public void i_receive_valid_Response_for_GET_all_stocks_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set GET stock by id api service endpoint")
+    public void i_Set_GET_stock_by_id_api_service_endpoint() {
+        endPoint = EndpointURLs.GET_ALL_STOCK_BY_ID;
+    }
+
+    @Then("I receive valid Response for GET stock by id service")
+    public void i_receive_valid_Response_for_GET_stock_by_id_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Search  Event By team api service endpoint")
+    public void i_Set_Search_Event_By_team_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_EVENT_BY_TEAM;
+    }
+
+    @Then("I receive valid Response for Search Event By team service")
+    public void i_receive_valid_Response_for_Search_Event_By_team_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Search  Event By team id api service endpoint")
+    public void i_Set_Search_Event_By_team_id_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_EVENT_BY_TEAM_ID;
+    }
+
+    @Then("I receive valid Response for Search Event By team id service")
+    public void i_receive_valid_Response_for_Search_Event_By_team_id_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Search  Event By Location id api service endpoint")
+    public void i_Set_Search_Event_By_Location_id_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_EVENT_BY_LOCATION_ID;
+    }
+
+    @Then("I receive valid Response for Search Event By Location id service")
+    public void i_receive_valid_Response_for_Search_Event_By_Location_id_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
 }
 

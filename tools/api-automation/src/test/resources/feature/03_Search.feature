@@ -59,3 +59,48 @@ Feature: Search
     When I Set request HEADER
     And Send a GET HTTP request
     Then I receive valid Response for GET all users service
+
+  Scenario: Get All Events
+    Given I am Testing Case : "115"
+    Given I Set GET all events api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for GET all events service
+
+  Scenario: Get All stocks
+    Given I am Testing Case : "115"
+    Given I Set GET all stocks api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for GET all stocks service
+
+  Scenario: Get stock by id
+    Given I am Testing Case : "115"
+    Given I Set GET stock by id api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for GET stock by id service
+
+  Scenario: Search Event By team
+    Given I am Testing Case : "115"
+    Given I Set Search  Event By team api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Event By team service
+
+  Scenario: Search Event By team id
+    Given I am Testing Case : "115"
+    Given I Set Search  Event By team id api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Event By team id service
+
+
+  Scenario: Search Event By Location id
+    Given I am Testing Case : "115"
+    Given I Set Search  Event By Location id api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Event By Location id service
+
+

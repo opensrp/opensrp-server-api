@@ -18,8 +18,12 @@ public static String SEARCH_CLIENT_BY_BIRTHDAY ="/rest/client/search?birthdate=2
 public static String GET_ALL_USERS= "/rest/user?page_size=10&start_index=0";
 public static String SEARCH_CLIENT_BY_NAME = "/rest/client/search?name=Adam";
 public static String SYNC_SERVERSIDE_SETTING = "/rest/settings/sync?serverVersion=0";
-
-
+public static String GET_ALL_EVENTS= "/rest/event/getAll?serverVersion=0&limit=10";
+public static String GET_ALL_STOCK= "/rest/stockresource/getall";
+public static String GET_ALL_STOCK_BY_ID= "/rest/stockresource/xxxx";
+public static String SEARCH_EVENT_BY_TEAM= "/rest/event/search?team=PTClinic1";
+public static String SEARCH_EVENT_BY_TEAM_ID= "/rest/event/search?teamId=567a6dbf-90c1-4a52-a19a-ff1e02072341";
+public static String SEARCH_EVENT_BY_LOCATION_ID ="/rest/event/search?locationId=b1b8c8dd-55fe-4ad3-aa73-740ae3114cd5";
 
 
 }
