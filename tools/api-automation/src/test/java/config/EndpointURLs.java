@@ -24,6 +24,9 @@ public static String GET_ALL_STOCK_BY_ID= "/rest/stockresource/xxxx";
 public static String SEARCH_EVENT_BY_TEAM= "/rest/event/search?team=PTClinic1";
 public static String SEARCH_EVENT_BY_TEAM_ID= "/rest/event/search?teamId=567a6dbf-90c1-4a52-a19a-ff1e02072341";
 public static String SEARCH_EVENT_BY_LOCATION_ID ="/rest/event/search?locationId=b1b8c8dd-55fe-4ad3-aa73-740ae3114cd5";
-
-
+public static String SEARCH_EVENT_BY_PROVIDER_ID ="/rest/event/search?providerId=ptclinician1";
+public static String SEARCH_EVENT_BY_ENTITY_TYPE ="/rest/event/search?entityType=mother";
+public static String SEARCH_EVENT_ID_BY_EVENT_TYPE ="/rest/event/findIdsByEventType?eventType=Birth Registration";
+public static String SEARCH_EVENT_BY_ID ="/rest/event/0448029-e005-4dd6-8a94-68e0bfd12876";
+public static String GET_PROVIDER_ACTION ="/actions?anmIdentifier={{username}}&timeStamp=1553817603433";
 }

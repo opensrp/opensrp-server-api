@@ -148,5 +148,56 @@ public class Search {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
     }
 
+    @Given("I Set Search  Event By Provider id api service endpoint")
+    public void i_Set_Search_Event_By_Provider_id_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_EVENT_BY_PROVIDER_ID;
+    }
+
+    @Then("I receive valid Response for Search Event By Provider id service")
+    public void i_receive_valid_Response_for_Search_Event_By_Provider_id_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Search  Event By Entity type api service endpoint")
+    public void i_Set_Search_Event_By_Entity_type_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_EVENT_BY_ENTITY_TYPE;
+    }
+
+    @Then("I receive valid Response for Search Event By Entity type service")
+    public void i_receive_valid_Response_for_Search_Event_By_Entity_type_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Search  Event By Event type api service endpoint")
+    public void i_Set_Search_Event_By_Event_type_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_EVENT_ID_BY_EVENT_TYPE;
+    }
+
+    @Then("I receive valid Response for Search Event By Event type service")
+    public void i_receive_valid_Response_for_Search_Event_By_Event_type_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Search  Event By id api service endpoint")
+    public void i_Set_Search_Event_By_id_api_service_endpoint() {
+        endPoint = EndpointURLs.SEARCH_EVENT_BY_ID;
+    }
+
+    @Then("I receive valid Response for Search Event By id service")
+    public void i_receive_valid_Response_for_Search_Event_By_id_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+    @Given("I Set Fetch Provider action api service endpoint")
+    public void i_Set_Fetch_Provider_action_api_service_endpoint() {
+        endPoint = EndpointURLs.GET_PROVIDER_ACTION;
+    }
+
+    @Then("I receive valid Response for Fetch Provider action service")
+    public void i_receive_valid_Response_for_Fetch_Provider_action_service() {
+        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+    }
+
+
 }
 

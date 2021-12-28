@@ -103,4 +103,39 @@ Feature: Search
     And Send a GET HTTP request
     Then I receive valid Response for Search Event By Location id service
 
+  Scenario: Search Event By Provider id
+    Given I am Testing Case : "115"
+    Given I Set Search  Event By Provider id api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Event By Provider id service
 
+
+  Scenario: Search Event By Entity type
+    Given I am Testing Case : "115"
+    Given I Set Search  Event By Entity type api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Event By Entity type service
+
+  Scenario: Search Event By Event type
+    Given I am Testing Case : "115"
+    Given I Set Search  Event By Event type api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Event By Event type service
+
+  Scenario: Search Event By id
+    Given I am Testing Case : "115"
+    Given I Set Search  Event By id api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Search Event By id service
+
+
+  Scenario: Fetch Provider action
+    Given I am Testing Case : "115"
+    Given I Set Fetch Provider action api service endpoint
+    When I Set request HEADER
+    And Send a GET HTTP request
+    Then I receive valid Response for Fetch Provider action service
