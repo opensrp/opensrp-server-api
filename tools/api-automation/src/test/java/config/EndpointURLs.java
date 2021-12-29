@@ -29,4 +29,6 @@ public static String SEARCH_EVENT_BY_ENTITY_TYPE ="/rest/event/search?entityType
 public static String SEARCH_EVENT_ID_BY_EVENT_TYPE ="/rest/event/findIdsByEventType?eventType=Birth Registration";
 public static String SEARCH_EVENT_BY_ID ="/rest/event/0448029-e005-4dd6-8a94-68e0bfd12876";
 public static String GET_PROVIDER_ACTION ="/actions?anmIdentifier={{username}}&timeStamp=1553817603433";
+public static String POST_EVENT ="/rest/event/add/";
+public static String POST_CLIENT ="/rest/client/add/";
 }

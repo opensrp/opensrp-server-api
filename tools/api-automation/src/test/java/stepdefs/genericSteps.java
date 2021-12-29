@@ -18,7 +18,7 @@ public class genericSteps {
 
     @When("I Set request HEADER and PAYLOAD")
     public void i_Set_request_HEADER_and_PAYLOAD() {
-        ReusableFunctions.givenHeaderPayload(ReusableFunctions.headers(Hooks.HEADER_AUTHORIZATION,EnvGlobals.apiToken), RequestPayLoad);
+        ReusableFunctions.givenHeaderPayload(ReusableFunctions.headers(Hooks.HEADER_AUTHORIZATION,EnvGlobals.accessToken), RequestPayLoad);
     }
 
     @When("Send a POST HTTP request")
