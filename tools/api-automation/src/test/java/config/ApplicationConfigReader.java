@@ -11,7 +11,6 @@ import ru.qatools.properties.Resource.Classpath;
 
 public class ApplicationConfigReader {
 
-
     @Property("baseUrl")
     private String baseUrl;
     @Property("htmlReportPath")
@@ -57,6 +56,9 @@ public class ApplicationConfigReader {
 
     @Property("password")
     private String password;
+
+    @Property("privateKey")
+    private String privateKey;
 
     public ApplicationConfigReader() {
         PropertyLoader.newInstance().populate(this);
@@ -136,6 +138,10 @@ public class ApplicationConfigReader {
 
     public String getTestRailprojectid() {
         return this.TestRailprojectid;
+    }
+
+    public String getPrivateKey() {
+        return this.privateKey;
     }
 
     public String getfilePath() {

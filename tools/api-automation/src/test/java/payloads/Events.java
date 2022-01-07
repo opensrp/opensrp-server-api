@@ -1,17 +1,17 @@
 package payloads;
 
 public class Events {
-    public static String addEvent()
+    public static String addEvent(String clientBase,String clientAddress,String clientId,String teamName,String teamId,String eventBase,String location,String form,String eventId,String provider)
     {
         return "{\n" +
                 "  \"clients\": [\n" +
                 "    {\n" +
-                "      \"firstName\": \"Postman\",\n" +
-                "      \"lastName\": \"Pentest\",\n" +
+                "      \"firstName\": \"Web\",\n" +
+                "      \"lastName\": \"admin\",\n" +
                 "      \"birthdateApprox\": false,\n" +
                 "      \"deathdateApprox\": false,\n" +
                 "      \"gender\": \"female\",\n" +
-                "      \"baseEntityId\": \"test-c632-41b6-b855-eda8db7d79e6\",\n" +
+                "      \"baseEntityId\": \""+clientBase+"\",\n" +
                 "      \"identifiers\": {\n" +
                 "        \"M_ZEIR_ID\": \"1001202L_mother\"\n" +
                 "      },\n" +
@@ -20,7 +20,7 @@ public class Events {
                 "          \"addressType\": \"usual_residence\",\n" +
                 "          \"addressFields\": {\n" +
                 "            \"address2\": \"Nouakchott\",\n" +
-                "            \"address3\": \"b1b8c8dd-55fe-4ad3-aa73-740ae3114cd5\"\n" +
+                "            \"address3\": \""+clientAddress+"\"\n" +
                 "          }\n" +
                 "        }\n" +
                 "      ],\n" +
@@ -28,7 +28,7 @@ public class Events {
                 "      \"dateCreated\": \"2019-12-12T16:32:55.557Z\",\n" +
                 "      \"serverVersion\": 1576168375509,\n" +
                 "      \"type\": \"Client\",\n" +
-                "      \"id\": \"test-d5d4-452d-9662-8881d92995d9\",\n" +
+                "      \"id\": \""+clientId+"\",\n" +
                 "      \"revision\": \"v1\"\n" +
                 "    }\n" +
                 "  ],\n" +
@@ -36,12 +36,12 @@ public class Events {
                 "  \"events\": [\n" +
                 "    {\n" +
                 "      \"identifiers\": {},\n" +
-                "      \"baseEntityId\": \"test-c632-41b6-b855-eda8db7d79e6\",\n" +
-                "      \"locationId\": \"b1b8c8dd-55fe-4ad3-aa73-740ae3114cd5\",\n" +
+                "      \"baseEntityId\": \""+eventBase+"\",\n" +
+                "      \"locationId\": \""+location+"\",\n" +
                 "      \"eventDate\": \"2019-12-09T00:00:00.000Z\",\n" +
                 "      \"eventType\": \"Birth Registration\",\n" +
-                "      \"formSubmissionId\": \"c88c9557-7d60-4eb3-b857-10968e552a9e\",\n" +
-                "      \"providerId\": \"ptclinician1\",\n" +
+                "      \"formSubmissionId\": \""+form+"\",\n" +
+                "      \"providerId\": \""+provider+"\",\n" +
                 "      \"duration\": 0,\n" +
                 "      \"obs\": [\n" +
                 "        {\n" +
@@ -157,14 +157,14 @@ public class Events {
                 "      ],\n" +
                 "      \"entityType\": \"child\",\n" +
                 "      \"version\": 1575923858656,\n" +
-                "      \"teamId\": \"567a6dbf-90c1-4a52-a19a-ff1e02072341\",\n" +
-                "      \"team\": \"PTClinic1\",\n" +
+                "      \"teamId\": \""+teamId+"\",\n" +
+                "      \"team\": \""+teamName+"\",\n" +
                 "      \"dateCreated\": \"2019-12-09T20:40:07.033Z\",\n" +
                 "      \"serverVersion\": 1575924007025,\n" +
                 "      \"clientApplicationVersion\": 11,\n" +
                 "      \"clientDatabaseVersion\": 11,\n" +
                 "      \"type\": \"Event\",\n" +
-                "      \"id\": \"test-e005-4dd6-8a94-68e0bfd12876\",\n" +
+                "      \"id\": \""+eventId+"\",\n" +
                 "      \"revision\": \"v1\"\n" +
                 "    }\n" +
                 "  ]\n" +

@@ -15,6 +15,7 @@ public class Authentication {
     @Then("I receive valid Response for GET Authentication service")
     public void i_receive_valid_Response_for_GET_Authentication_service() {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+        validation.Authentication.validateUserName();
     }
 
 }

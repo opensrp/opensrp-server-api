@@ -29,8 +29,7 @@ import static config.ConfigProperties.sendEmail;
 @CucumberOptions(features = { "src/test/resources/feature" },
         glue = {"stepdefs"},
         plugin = { "pretty", "html:target/cucumber" },
-       //tags={"@DataView,@Forms"})
-        tags={"@test"})
+        tags={"@auth,@client,@event,@loc"})
 
 
 public  class RunCukesTest
@@ -76,7 +75,6 @@ public  class RunCukesTest
 
     @AfterClass
     public static void AfterClass() throws IOException, MessagingException, APIException {
-        //Reporter.loadXMLConfig(new File(Reports.getReportConfigPath()));
         if(ConfigProperties.isReportingEnable.toLowerCase().equals("true")) {
             Reports.getExtentReport().flush();
             Reports.getExtentReport().close();

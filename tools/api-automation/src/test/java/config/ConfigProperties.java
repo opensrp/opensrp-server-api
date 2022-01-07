@@ -27,6 +27,7 @@ public class ConfigProperties {
     public static String password = appConfig.getPassword();
     public static String testTrailProjectId = appConfig.getTestRailprojectid();
     public static String filePath = appConfig.getfilePath();
+    public static String privateKey = appConfig.getPrivateKey();
 
 
 

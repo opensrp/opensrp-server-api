@@ -1,6 +1,7 @@
 package stepdefs;
 
 import config.EndpointURLs;
+import config.EnvGlobals;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import general.ReusableFunctions;
@@ -10,13 +11,14 @@ import static stepdefs.Hooks.endPoint;
 public class Syncing {
     @Given("I Set GET Event Sync by Location api service endpoint")
     public void i_Set_GET_Event_Sync_by_Location_api_service_endpoint() {
-        endPoint = EndpointURLs.SYNC_BY_LOCATION;
+        endPoint = String.format(EndpointURLs.SYNC_BY_LOCATION, EnvGlobals.eventLocation_uuid);
 
     }
 
     @Then("I receive valid Response for GET Event Sync by Location service")
     public void i_receive_valid_Response_for_GET_Event_Sync_by_Location_service() {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+        validation.SYNC.validateSyncByLocation();
 
     }
 

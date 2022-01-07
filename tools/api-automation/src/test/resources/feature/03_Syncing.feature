@@ -2,7 +2,7 @@
 Feature: Sync
 
 
-  @Sync
+  @Sync @loc
   Scenario: Get Event Sync by Location
     Given I am Testing Case : "115"
     Given I Set GET Event Sync by Location api service endpoint

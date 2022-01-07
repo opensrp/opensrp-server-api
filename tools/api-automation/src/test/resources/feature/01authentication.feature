@@ -1,4 +1,4 @@
-@test
+@test @auth
 Feature: Authentication
 
 
