@@ -29,7 +29,7 @@ import static config.ConfigProperties.sendEmail;
 @CucumberOptions(features = { "src/test/resources/feature" },
         glue = {"stepdefs"},
         plugin = { "pretty", "html:target/cucumber" },
-        tags={"@auth,@client,@event,@loc"})
+        tags={"@auth,@client,@event,@Sync,@search"})
 
 
 public  class RunCukesTest

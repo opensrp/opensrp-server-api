@@ -14,4 +14,9 @@ public class Client {
         Assert.assertNotNull(ReusableFunctions.getResponsePath("_id"));
         Assert.assertEquals(ReusableFunctions.getResponsePath("addresses.addressFields.address3"), "["+EnvGlobals.clientAddress_uuid+"]");
     }
+
+
+    public static void validateUpdatedField(String gender) {
+        Assert.assertEquals(ReusableFunctions.getResponsePath("gender"), gender);
+    }
 }

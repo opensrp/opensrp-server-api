@@ -18,4 +18,23 @@ public class SYNC {
         Assert.assertEquals(ReusableFunctions.getResponsePath("events.team"), "["+EnvGlobals.teamName+"]");
         Assert.assertEquals(ReusableFunctions.getResponsePath("events._id"), "["+EnvGlobals.eventId_uuid+"]");
     }
+
+
+    public static void validateProviderId()
+    {
+          for(int i=0;i<ReusableFunctions.responseList("events").size();i++)
+          {
+              Assert.assertEquals(ReusableFunctions.getResponsePath("events["+i+"].providerId"), ConfigProperties.username);
+
+          }
+    }
+
+    public static void validateTeamId()
+    {
+        for(int i=0;i<ReusableFunctions.responseList("events").size();i++)
+        {
+            Assert.assertEquals(ReusableFunctions.getResponsePath("events["+i+"].team"), EnvGlobals.teamName);
+
+        }
+    }
 }

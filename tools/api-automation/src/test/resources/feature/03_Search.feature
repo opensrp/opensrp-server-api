@@ -1,4 +1,4 @@
-@test
+@test @search
 Feature: Search
 
   Scenario: Get Unique Id request

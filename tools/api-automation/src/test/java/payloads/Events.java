@@ -1,7 +1,7 @@
 package payloads;
 
 public class Events {
-    public static String addEvent(String clientBase,String clientAddress,String clientId,String teamName,String teamId,String eventBase,String location,String form,String eventId,String provider)
+    public static String addEvent(String clientBase,String clientAddress,String clientId,String teamName,String teamId,String eventBase,String location,String form,String eventId,String provider,String gender)
     {
         return "{\n" +
                 "  \"clients\": [\n" +
@@ -10,7 +10,7 @@ public class Events {
                 "      \"lastName\": \"admin\",\n" +
                 "      \"birthdateApprox\": false,\n" +
                 "      \"deathdateApprox\": false,\n" +
-                "      \"gender\": \"female\",\n" +
+                "      \"gender\": \""+gender+"\",\n" +
                 "      \"baseEntityId\": \""+clientBase+"\",\n" +
                 "      \"identifiers\": {\n" +
                 "        \"M_ZEIR_ID\": \"1001202L_mother\"\n" +
