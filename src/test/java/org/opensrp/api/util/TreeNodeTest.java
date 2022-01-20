@@ -102,4 +102,23 @@ public class TreeNodeTest {
 		
 		assertNull(rootNode.removeChild(4));
 	}
+
+	@Test
+	public void testChildModificationUsingSetters() {
+		TreeNode<Integer, Integer> altChildNode = new TreeNode<Integer, Integer>(childId, "t1", 1, rootId);
+		altChildNode.setLabel("alt 1");
+		altChildNode.setNode(2);
+		altChildNode.setParent(3);
+
+		Map<Integer, TreeNode<Integer, Integer>> children = new HashMap<>();
+		children.put(2, altChildNode);
+
+		TreeNode<Integer, Integer> altRootNode = new TreeNode<Integer, Integer>(rootId, "alt 2", 3, null, children);
+
+		altChildNode.setParent(3);
+
+		assertEquals(altChildNode.getLabel(), altRootNode.findChild(childId).getLabel());
+		assertEquals(altChildNode.getParent(), altRootNode.findChild(childId).getParent());
+		assertEquals(altChildNode.getNode(), altRootNode.findChild(childId).getNode());
+	}
 }
