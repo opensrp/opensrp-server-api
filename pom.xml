@@ -6,7 +6,7 @@
 	<artifactId>opensrp-server-api</artifactId>
 	<packaging>jar</packaging>
 
-	<version>1.1.1-SNAPSHOT</version>
+	<version>1.1.2-SNAPSHOT</version>
 
 	<name>opensrp-server-api</name>
 	<description>OpenSRP Server Api module</description>
@@ -16,7 +16,7 @@
 		<main.basedir>${project.basedir}</main.basedir>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<nexus-staging-maven-plugin.version>1.5.1</nexus-staging-maven-plugin.version>
-		<opensrp.common.version>2.1.1-SNAPSHOT</opensrp.common.version>
+		<opensrp.common.version>2.1.2-SNAPSHOT</opensrp.common.version>
 	</properties>
 
 	<distributionManagement>
