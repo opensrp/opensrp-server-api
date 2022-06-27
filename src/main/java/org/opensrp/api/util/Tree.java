@@ -1,11 +1,7 @@
 package org.opensrp.api.util;
 
 import java.io.Serializable;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Tree<K, T> implements Serializable {
 

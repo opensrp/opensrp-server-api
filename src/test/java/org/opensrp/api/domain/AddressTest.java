@@ -1,11 +1,5 @@
 package org.opensrp.api.domain;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-
 import com.openpojo.reflection.PojoClass;
 import com.openpojo.reflection.impl.PojoClassFactory;
 import com.openpojo.validation.Validator;
@@ -14,9 +8,7 @@ import com.openpojo.validation.rule.impl.GetterMustExistRule;
 import com.openpojo.validation.rule.impl.SetterMustExistRule;
 import com.openpojo.validation.test.impl.GetterTester;
 import com.openpojo.validation.test.impl.SetterTester;
-
 import junit.framework.Assert;
-
 import org.joda.time.DateTime;
 import org.junit.Test;
 import org.opensrp.common.AddressField;
@@ -24,6 +16,8 @@ import org.opensrp.common.AddressField;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.Assert.*;
 
 public class AddressTest {
 

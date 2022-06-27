@@ -4,9 +4,7 @@ import com.openpojo.reflection.PojoClass;
 import com.openpojo.reflection.construct.InstanceFactory;
 import com.openpojo.reflection.impl.PojoClassFactory;
 import com.openpojo.validation.affirm.Affirm;
-
 import junit.framework.Assert;
-
 import org.junit.Test;
 
 import java.text.SimpleDateFormat;

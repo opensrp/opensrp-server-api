@@ -1,12 +1,12 @@
 package org.opensrp.api.util;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNull;
-
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNull;
 
 public class TreeNodeTest {
 
