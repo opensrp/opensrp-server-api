@@ -207,14 +207,14 @@ public class AddressTest {
         Address address = new Address();
         address.setAddressType("usual_residence");
         Assert.assertEquals("usual_residence", address.getAddressType());
-        Assert.assertNotSame("usual_residence_1", address.getAddressType());
+        assertNotSame("usual_residence_1", address.getAddressType());
         address.withAddressField("address3", "Dambwa_Central");
         Map<String, String> addressFields = new HashMap<>();
         addressFields.put("address2", "morelight c566");
         address.withAddressFields(addressFields);
         address.withAddressField(AddressField.AREA, "Ares");
         Assert.assertEquals("morelight c566", address.getAddressField("address2"));
-        Assert.assertNotSame("morelight c5666", address.getAddressField("address2"));
+        assertNotSame("morelight c5666", address.getAddressField("address2"));
     }
 
     @Test
