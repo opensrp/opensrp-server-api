@@ -6,12 +6,12 @@ import org.opensrp.api.util.LocationTree;
 import org.opensrp.api.util.TreeNode;
 
 public interface LocationManager {
-	
-	Location getLocation(String locationId);
-	
-	TreeNode<String, Location> getLocationWithTree(String startinglocationId);
-	
-	LocationTree getLocationHierarchy();
-	
-	void verifyLocationAccess(Location location, User user);
+
+    Location getLocation(String locationId);
+
+    TreeNode<String, Location> getLocationWithTree(String startinglocationId);
+
+    LocationTree getLocationHierarchy();
+
+    void verifyLocationAccess(Location location, User user);
 }
