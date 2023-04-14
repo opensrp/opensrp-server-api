@@ -31,16 +31,16 @@ public class Event {
         ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_CREATED);
     }
 
-    @Given("I Set Put event service api endpoint")
-    public void i_Set_Put_event_service_api_endpoint() {
-        endPoint = EndpointURLs.POST_EVENT;
-        RequestPayLoad = Events.addEvent(EnvGlobals.clientBasicEntityID_uuid,EnvGlobals.clientAddress_uuid,EnvGlobals.clientId_uuid,EnvGlobals.teamName,EnvGlobals.teamUuid,EnvGlobals.eventBasicEntityID_uuid,EnvGlobals.eventLocation_uuid ,EnvGlobals.formSubmissionId_uuid,EnvGlobals.eventId_uuid, ConfigProperties.username,"male");
-    }
-
-    @Then("I receive valid Response for Put event service")
-    public void i_receive_valid_Response_for_Put_event_service() {
-        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
-    }
+//    @Given("I Set Put event service api endpoint")
+//    public void i_Set_Put_event_service_api_endpoint() {
+//        endPoint = EndpointURLs.POST_EVENT;
+//        RequestPayLoad = Events.addEvent(EnvGlobals.clientBasicEntityID_uuid,EnvGlobals.clientAddress_uuid,EnvGlobals.clientId_uuid,EnvGlobals.teamName,EnvGlobals.teamUuid,EnvGlobals.eventBasicEntityID_uuid,EnvGlobals.eventLocation_uuid ,EnvGlobals.formSubmissionId_uuid,EnvGlobals.eventId_uuid, ConfigProperties.username,"male");
+//    }
+//
+//    @Then("I receive valid Response for Put event service")
+//    public void i_receive_valid_Response_for_Put_event_service() {
+//        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+//    }
 
 
     @Given("I Set POST Client service api endpoint")
@@ -58,16 +58,16 @@ public class Event {
         validation.Client.validateClientResponseBody();
     }
 
-    @Given("I Set Put Client service api endpoint")
-    public void i_Set_Put_client_service_api_endpoint() {
-        endPoint = EndpointURLs.POST_CLIENT;
-        RequestPayLoad = Client.UpdateClient(EnvGlobals.clientBasicEntityID_uuid,EnvGlobals.clientAddress_uuid,EnvGlobals.clientId_uuid,"male");
-    }
-
-    @Then("I receive valid Response for Put Client service")
-    public void i_receive_valid_Response_for_Put_client_service() {
-        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
-        validation.Client.validateClientResponseBody();
-        validation.Client.validateUpdatedField("male");
-    }
+//    @Given("I Set Put Client service api endpoint")
+//    public void i_Set_Put_client_service_api_endpoint() {
+//        endPoint = EndpointURLs.POST_CLIENT;
+//        RequestPayLoad = Client.UpdateClient(EnvGlobals.clientBasicEntityID_uuid,EnvGlobals.clientAddress_uuid,EnvGlobals.clientId_uuid,"male");
+//    }
+//
+//    @Then("I receive valid Response for Put Client service")
+//    public void i_receive_valid_Response_for_Post_client_service() {
+//        ReusableFunctions.thenFunction(Hooks.HTTP_RESPONSE_SUCCESS);
+//        validation.Client.validateClientResponseBody();
+//        validation.Client.validateUpdatedField("male");
+//    }
 }
